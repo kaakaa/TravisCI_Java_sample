@@ -16,4 +16,16 @@ public class SampleTest {
 		// then
 		assertThat(actual, is("Hello Travis!"));
 	}
+
+	@Test(expected = AssertionError.class)
+	public void ErrorTest(){
+		// setup
+		Sample target = new Sample();
+
+		// when
+		String actual = target.hello();
+
+		// then
+		assertThat(actual, is("hogehoge"));
+	}
 }
