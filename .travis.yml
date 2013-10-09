@@ -1,0 +1,11 @@
+language: java
+script: gradle assemble
+jdk:
+- oraclejdk7
+- openjdk6
+matrix:
+        include:
+                - jdk: oraclejdk7
+                        script: gradle build
+                - jdk: openjdk6
+                        script: gradle jar
