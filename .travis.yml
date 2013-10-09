@@ -9,3 +9,6 @@ matrix:
                         script: gradle build
                 - jdk: openjdk6
                         script: gradle jar
+branches:
+        only:
+                - master
