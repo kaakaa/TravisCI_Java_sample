@@ -5,10 +5,10 @@ jdk:
 - openjdk6
 matrix:
         include:
-                - jdk: oraclejdk7
-                        script: gradle build
-                - jdk: openjdk6
-                        script: gradle jar
+        - jdk: oraclejdk7
+                script: gradle build
+        - jdk: openjdk6
+                script: gradle jar
 branches:
         only:
                 - master
